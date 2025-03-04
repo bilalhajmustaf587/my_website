@@ -27,3 +27,12 @@ let tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
 let firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+document.addEventListener("DOMContentLoaded", function () {
+    let menuToggle = document.querySelector(".menu-toggle");
+    let navMenu = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active"); // عرض/إخفاء القائمة
+    });
+});

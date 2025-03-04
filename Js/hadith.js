@@ -14,3 +14,12 @@
         let randomIndex = Math.floor(Math.random() * hadiths.length);
         hadithText.textContent = hadiths[randomIndex];
     });
+    document.addEventListener("DOMContentLoaded", function () {
+        let menuToggle = document.querySelector(".menu-toggle");
+        let navMenu = document.querySelector("nav ul");
+    
+        menuToggle.addEventListener("click", function () {
+            navMenu.classList.toggle("active"); // عرض/إخفاء القائمة
+        });
+    });
+    
